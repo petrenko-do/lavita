@@ -1,0 +1,82 @@
+.footer {
+    &__content {
+        margin-top: 120px;
+        background: rgba(51, 51, 51, 0.05);
+    }
+
+
+    &__wrapper {
+        padding: 60px 0;
+        display: grid;
+        grid-template: minmax(398px, auto) / 221px repeat(4, 200px);
+        column-gap: 69px;
+        border-bottom: 1px solid rgba(51, 51, 51, .3);
+    }
+
+    &__contact {
+        &_title {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        &_items {
+            margin-top: 40px;
+            display: block;
+
+            li {
+                padding-bottom: 10px;
+            }
+        }
+
+        &_social {
+            margin-top: 40px;
+            width: 180px;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                display: block;
+                width: 30px;
+                height: 30px;
+                transition: all .2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: all .2s;
+                }
+            }
+        }
+    }
+
+    &__about,
+    &__exams,
+    &__school {
+        &_list {
+            margin-top: 25px;
+
+            li {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__info {
+        &_list {
+            margin-top: 25px;
+            margin-bottom: 40px;
+
+            li {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__copy {
+        padding: 25px 0;
+        text-align: center;
+        font-size: 14px;
+        color: rgba(51, 51, 51);
+        opacity: 0.5;
+    }
+
+}

@@ -1,0 +1,26 @@
+.contact {
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+
+        li {
+            padding-left: 44px;
+            position: relative;
+        }
+    }
+
+    &__adres {
+        @include adres_icon;
+    }
+
+    &__phone {
+        @include phone_icon;
+    }
+
+    &__email {
+        @include email_icon;
+    }
+}

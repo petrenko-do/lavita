@@ -1,0 +1,40 @@
+.header_top {
+
+    .header {
+        display: grid;
+        height: 80px;
+        grid-template: minmax(24px, auto) / 217px 674px minmax(100px, auto);
+        justify-content: space-between;
+        align-items: center;
+
+        &__title {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $main-color;
+        }
+
+        &__btn {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+    }
+}
+
+.subheader {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            margin-left: 20px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@mixin red_square {
+    &:before {
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 8px;
+        background-color: $main-color;
+        left: 0;
+        top: 8px;
+    }
+}
+
+
+
+@mixin adres_icon {
+    &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: -3px;
+        width: 24px;
+        height: 24px;
+        background: url('../../icons/location.svg') center (center / cover) no-repeat;
+    }
+}
+
+
+
+@mixin phone_icon {
+    &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: -3px;
+        width: 24px;
+        height: 24px;
+        background: url('../../icons/phone.svg') center (center / cover) no-repeat;
+    }
+}
+
+
+
+@mixin email_icon {
+    &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: -3px;
+        width: 24px;
+        height: 24px;
+        background: url('../../icons/mail.svg') center (center / cover) no-repeat;
+    }
+}

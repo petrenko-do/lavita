@@ -1,0 +1,21 @@
+.btn {
+    font-weight: 700;
+    padding: 15px 30px;
+    font-size: 20px;
+    line-height: 140%;
+    background-color: $main-color;
+    border: none;
+    color: #fff;
+    border-radius: 0px;
+
+    &:hover {
+        transition: all 0.3s;
+        color: #fff;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+        transition: all 0.2s;
+        background-color: rgba(236, 27, 46, .5);
+    }
+}

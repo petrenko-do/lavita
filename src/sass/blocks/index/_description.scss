@@ -1,0 +1,25 @@
+.description {
+    padding-top: 150px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 640px 400px;
+        grid-template-rows: minmax(400px, auto);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        border: 10px solid $main-color;
+        padding: 75px 80px 65px 80px;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            top: -47px;
+            left: 60px;
+            padding: 10px 30px;
+            background-color: #fff;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.slider {
+    .carousel {
+
+        &-inner {
+            position: relative;
+            // height: 700px;
+        }
+
+        &-item {
+            height: 700px;
+
+            img {
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+
+
+    }
+
+    .container {
+        position: absolute;
+        top: 126px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__wrapper {
+        position: absolute;
+        left: 108px;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 140%;
+        width: 585px;
+        min-height: 310px;
+        background: rgba(51, 51, 51, 0.5);
+        color: #fff;
+        padding: 15px 30px;
+    }
+
+    &__btn {
+        margin-top: 50px;
+    }
+}

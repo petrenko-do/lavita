@@ -1,0 +1,43 @@
+.breadcrumbs {
+    &__inner {
+        padding: 40px 15px 0 15px;
+        overflow: hidden;
+        // width: 1200px;
+    }
+
+    &__list {
+        li {
+            display: inline-block;
+            position: relative;
+
+            &+li {
+                padding-left: 40px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 8px;
+                    width: 8px;
+                    height: 8px;
+                    background-color: $main-color;
+                    left: 15px;
+                    top: 8px;
+                }
+            }
+        }
+
+        &:last-child {
+
+            a,
+            span {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

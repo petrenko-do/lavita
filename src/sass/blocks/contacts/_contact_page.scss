@@ -1,0 +1,62 @@
+.contacts {
+    margin-top: 40px;
+
+    &__items {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 306px 314px 196px 306px;
+        grid-template-rows: minmax(124px, auto);
+        grid-auto-rows: minmax(124px, auto);
+        column-gap: 58px;
+        justify-content: space-between;
+    }
+
+    &__item {
+        font-size: 24px;
+
+        &-title {
+            margin-bottom: 30px;
+        }
+
+        &-list {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            margin-bottom: 20px;
+        }
+
+        &-adres {
+            font-size: 16px;
+            font-weight: 700;
+            padding-left: 29px;
+            position: relative;
+            @include adres_icon;
+
+            &:before {
+                left: -7px;
+                top: -2px;
+            }
+        }
+
+        &-schedule {
+            padding-left: 23px;
+            position: relative;
+            @include red_square;
+        }
+
+        &-subtitle {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+        }
+    }
+
+    &__link {
+        &-mail {
+            color: $main-color;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+}

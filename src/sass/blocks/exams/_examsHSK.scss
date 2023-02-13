@@ -1,0 +1,63 @@
+.exams-hsk {
+    margin-top: 40px;
+
+    &__page {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        margin: 0 auto;
+        max-width: 1076px;
+        padding-top: 80px;
+    }
+
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 636px;
+
+        &-text {
+            padding-top: 60px;
+
+            &:last-child {
+                padding-top: 40px;
+            }
+        }
+
+        &-items {
+            margin-top: 60px;
+        }
+
+        &-list {
+            margin-top: 40px;
+        }
+
+        &-item {
+            padding-left: 23px;
+            position: relative;
+            margin-bottom: 30px;
+
+            &:nth-of-type(1) {
+                margin-top: 40px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @include red_square;
+        }
+    }
+
+    &__btns {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+
+        &-link {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
